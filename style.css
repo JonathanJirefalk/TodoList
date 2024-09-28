@@ -8,6 +8,22 @@ h1{
     font-size: 50px;
 }
 
+.searchSection{
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+}
+
+.searchBar{
+
+    height: 30px;
+    width: 200px;
+    margin-right: 40px;
+
+    
+
+}
+
 .container{
     
     height: 100vh;
@@ -15,6 +31,7 @@ h1{
 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .listSection{
@@ -69,13 +86,12 @@ p{
     width: 70%;
     font-size: 20px;
     margin-left: 45px;
+    margin-right: 10px;
 }
 
-button{
+.taskButton{
     width: 100px;
     height: 30px;
-    margin-left: 10px;
-    justify-content: center;
-    align-items: center;
+
     font-size: 18px;
 }

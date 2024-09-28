@@ -4,6 +4,9 @@ addTaskButton.addEventListener('click', createTaskFunction)
 const list = document.getElementById('list')
 const textInput = document.getElementById('textInput')
 
+let searchInput = document.getElementById('searchInput')
+searchInput.addEventListener('input', searchForTasks)
+
 
 function createTaskFunction(){
     
@@ -17,16 +20,34 @@ function createTaskFunction(){
     newCheckbox.className = "checkboxInput"
     
     const newParagraph = document.createElement('p')
-    const value = textInput.value
-    newParagraph.innerText = value
+    const textValue = textInput.value
+    newParagraph.innerText = textValue
     
     newTask.append(newCheckbox, newParagraph)
     
-    if(value.trim() != ''){
+    if(textValue.trim() != ''){
 
         list.append(newTask)
     }
     
     
     textInput.value = ''
+}
+
+function searchForTasks(){
+    
+    const tasks = list.querySelectorAll('section')
+    const searchValue = searchInput.value
+
+    for (let i = 0; i < tasks.length; i++){
+
+        if(tasks[i].textContent.includes(searchValue)){
+
+            tasks[i].style.display = 'flex'
+
+        }else{
+
+            tasks[i].style.display = 'none'
+        }
+    }
 }

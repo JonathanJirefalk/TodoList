@@ -1,23 +1,23 @@
-let addTaskButton = document.getElementById('createTask')
+const addTaskButton = document.getElementById('createTask')
 addTaskButton.addEventListener('click', createTaskFunction)
 
-let list = document.getElementById('list')
-let textInput = document.getElementById('textInput')
+const list = document.getElementById('list')
+const textInput = document.getElementById('textInput')
 
 
 function createTaskFunction(){
     
     console.log('button click')
     
-    let newTask = document.createElement('section')
+    const newTask = document.createElement('section')
     newTask.className = "layout"
     
-    let newCheckbox = document.createElement('input')
+    const newCheckbox = document.createElement('input')
     newCheckbox.setAttribute("type", "checkbox")
     newCheckbox.className = "checkboxInput"
     
-    let newParagraph = document.createElement('p')
-    let value = textInput.value
+    const newParagraph = document.createElement('p')
+    const value = textInput.value
     newParagraph.innerText = value
     
     newTask.append(newCheckbox, newParagraph)

@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.container{
+    
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+}
+
+.listSection{
+    height: 100vh;
+    width: 30%; 
+    
+    display: flex;
+
+    flex-direction: column;
+}
+
+.ulList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.layout{
+    width: 100%;
+    height: 70px;
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+    border-bottom: 2px solid rgb(92, 92, 92);
+}
+
+.checkboxInput{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.checkboxInput:checked + p{
+
+    text-decoration: line-through;
+}
+
+p{
+    font-size: 30px;
+}
+
+.addTask{
+    height: 30px;
+    width: 100%;
+    display: flex;
+}
+
+.textInput{
+    width: 70%;
+    font-size: 20px;
+    margin-left: 45px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+
+
+
+
+

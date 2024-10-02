@@ -5,7 +5,7 @@
 h1{
     display: flex;
     justify-content: center;
-    font-size: 50px;
+    font-size: 3rem;
 }
 
 .searchSection{
@@ -16,9 +16,9 @@ h1{
 
 .searchBar{
 
-    height: 30px;
-    width: 200px;
-    margin-right: 40px;
+    height: 2rem;
+    width: 10rem;
+    margin-right: 2rem;
 
     
 
@@ -51,7 +51,7 @@ h1{
 
 .layout{
     width: 100%;
-    height: 70px;
+    height: 4rem;
     display: flex;
 
     flex-direction: row;
@@ -62,9 +62,9 @@ h1{
 }
 
 .checkboxInput{
-    height: 30px;
-    width: 30px;
-    margin-right: 10px;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
 }
 
 .checkboxInput:checked + p{
@@ -73,25 +73,25 @@ h1{
 }
 
 p{
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .addTask{
-    height: 30px;
+    height: 2rem;
     width: 100%;
     display: flex;
 }
 
 .textInput{
     width: 70%;
-    font-size: 20px;
-    margin-left: 45px;
-    margin-right: 10px;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
 }
 
 .taskButton{
-    width: 100px;
-    height: 30px;
+    width: 7rem;
+    height: 2rem;
 
-    font-size: 18px;
+    font-size: 1rem;
 }

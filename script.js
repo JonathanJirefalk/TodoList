@@ -4,13 +4,11 @@ addTaskButton.addEventListener('click', createTaskFunction)
 const list = document.getElementById('list')
 const textInput = document.getElementById('textInput')
 
-let searchInput = document.getElementById('searchInput')
+const searchInput = document.getElementById('searchInput')
 searchInput.addEventListener('input', searchForTasks)
 
 
 function createTaskFunction(){
-    
-    console.log('button click')
     
     const newTask = document.createElement('section')
     newTask.className = "layout"
@@ -29,7 +27,6 @@ function createTaskFunction(){
 
         list.append(newTask)
     }
-    
     
     textInput.value = ''
 }
